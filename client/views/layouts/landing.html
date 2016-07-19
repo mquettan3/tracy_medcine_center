@@ -1,13 +1,33 @@
 <template name="landingLayout">
 
-    <!-- Pre-loader -->
-    <div class="loader-wrapper">
-        <div id="loader"></div>
+    <div class="site_wrapper">
+        <!-- Top Header -->
+        {{> header }}
+ 
+        <!-- Navigation Bar -->
+        {{> nav }}
+       
+        <!-- Welcome to Tracy's -->
+        {{> welcome }}
+        
+        <!-- Spacer -->
+        <div class="container">
+            <hr align="center" style="width:90%;">
+        </div>
+         
+        <!-- Locations -->
+        {{> locations }}
+ 
+        <!-- Spacer -->
+        <div class="container">
+            <hr align="center" style="width:90%;">
+        </div>
+        
+        <!-- Additional Information + Case Knives -->
+        {{> additional_info }}
+
+        <!-- Copyright Footer -->
+        {{> footer }}       
     </div>
-    <div class="content">
-        <p>Hello World!</p>
-    </div>
-    <!-- Top Navigation Bar -->
-    <!-- {{> navbar }} -->
 
 </template>
